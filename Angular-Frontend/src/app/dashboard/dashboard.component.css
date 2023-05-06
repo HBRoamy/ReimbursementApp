@@ -1,0 +1,114 @@
+.txt-title {
+    color:#FC6D6D;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+        1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    
+    /* text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;          */
+}
+.rotate{
+    animation: rotor 60s linear infinite ;
+}
+.papaElement{
+    background: #6643b5;
+    
+    color:fff;
+    transition: all 0.4s ease-in;
+}
+.papaElement:hover{
+    background: #430f58;
+}
+
+.papaElement:hover > .rotateSvg{
+    transform: rotate(360deg) ;
+    transition: all 0.4s ease-in-out;
+    color: #5be7a9;
+    
+}
+
+.add-reimb-btn{
+    padding:0.3em;
+    border: 2px solid rgb(8, 223, 8);
+    color:rgb(8, 223, 8);
+    transition: all 0.3s ease;
+}
+.add-reimb-btn:hover{
+    background-color: rgb(8, 223, 8);
+    color:#fff;
+    
+    font-weight: bold;
+    transition: all 0.3s ease;
+    
+
+}
+.rise-Bg{
+    color:black;
+    border: 2px solid black;
+    padding:0.3em;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s ease-out;
+    background:  linear-gradient(to bottom, rgb(8, 223, 8,0) 0%, 
+                                            rgb(8, 223, 8,0) 50%,
+                                            #906387 75%,
+                                            #906387 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 400%;                                        
+}
+
+.rise-Bg:hover{
+    background-position: 0 100%;
+    border: 2px solid #906387;
+    
+    color:white;
+}
+
+.bg-dimmed-approve{
+    background: rgb(237, 237, 237);
+    transition: all 0.3s ease-out;
+    color:rgb(83, 180, 93);
+}
+
+.bg-dimmed-approve:hover {
+    background: rgb(83, 180, 93);
+    color: #fff;
+}
+.bg-dimmed-decline{
+    background: rgb(237, 237, 237);
+    transition: all 0.3s ease-out;
+    color:rgb(224, 84, 84);
+}
+.bg-dimmed-decline:hover{
+    background: rgb(224, 84, 84);
+    color: #fff;
+}
+
+.request-processed-approved{
+    background-color: rgb(236, 255, 249);
+}
+
+.hide{
+    display: none;
+}
+
+.request-processed-declined{
+    background-color: rgb(255, 248, 248);
+}
+
+.w-95{
+width:95%;
+border:1px solid black;
+margin: 1px;
+}
+
+@keyframes rotor{
+    0%{
+        transform: rotate(0deg);
+    }
+   
+    100%{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20230105054057_initialSetup.cs" />
+    <Compile Remove="Migrations\20230105054057_initialSetup.Designer.cs" />
+    <Compile Remove="Migrations\20230105084041_setAcNumberLimit.cs" />
+    <Compile Remove="Migrations\20230105084041_setAcNumberLimit.Designer.cs" />
+    <Compile Remove="Migrations\20230105091117_SetFullNameRegex.cs" />
+    <Compile Remove="Migrations\20230105091117_SetFullNameRegex.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.31" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.31" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+</Project>

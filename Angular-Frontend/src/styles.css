@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin:0;
+    padding: 0em 2em 2em 1.5em;
+    /* background: linear-gradient(45deg,#F17C58, #E94584, #24AADB , #27DBB1,#FFDC18, #FF3706); */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 10000% 10000%;
+    animation: gradient 15s ease-in-out infinite alternate;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x:auto;
+}
+
+@keyframes gradient {
+
+    /* 0% {background-position: 0%}
+    100% {background-position: 100%} */
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+.text-color-change1 {
+    color: #ee7752;
+    animation: textColor1 2s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes textColor1 {
+
+    /* 0% {background-position: 0%}
+    100% {background-position: 100%} */
+    0% {
+        color: #ee7752;
+    }
+
+    25% {
+        color: #e73c7e;
+    }
+
+    50% {
+        color: #23a6d5;
+    }
+
+    75% {
+        color: #23d5ab;
+    }
+
+    100% {
+        color: #ee7752;
+    }
+}
